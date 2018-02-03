@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/warehouseForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Warehouse" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_field_grey"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="5dp"
+                android:textSize="@dimen/textSmall" />
+
+            <TextView
+                android:id="@+id/state_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="State" />
+
+            <Spinner
+                android:id="@+id/state_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_field_grey"
+                android:ems="10"
+                android:padding="5dp"
+                android:textSize="@dimen/textSmall" />
+
+            <TextView
+                android:id="@+id/city_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="City" />
+
+            <Spinner
+                android:id="@+id/city_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_field_grey"
+                android:ems="10"
+                android:padding="5dp"
+                android:textSize="@dimen/textSmall" />
+
+            <TextView
+                android:id="@+id/line_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Line of business" />
+
+            <Spinner
+                android:id="@+id/line_of_business"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_field_grey"
+                android:ems="10"
+                android:padding="5dp"
+                android:textSize="@dimen/textSmall" />
+
+            <TextView
+                android:id="@+id/attendant_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Shop Attendant name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <Spinner
+                    android:id="@+id/attendant"
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/input_field_grey"
+                    android:ems="10"
+                    android:padding="5dp"
+                    android:textSize="@dimen/textSmall" />
+
+                <Button
+                    android:id="@+id/addAttendantBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                    android:textSize="@dimen/textLarge"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/phone_number_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Phone number" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/input_field_grey"
+                android:ems="10"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:textSize="@dimen/textSmall" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:visibility="gone">
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Activate" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="De-activate" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="46dp"
+                android:background="@drawable/button_border"
+                android:text="Gbam!"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textBtn" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/shopList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/emptyState"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_warehouse" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="No Warehouse"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textLarge" />
+
+        <Button
+            android:id="@+id/addWarehouse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Warehouse"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/colorBtnGreen"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

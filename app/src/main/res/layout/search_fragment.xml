@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_field_grey"
+        android:layout_margin="10dp"
+        android:drawableRight="@drawable/ic_search"
+        android:drawableTint="@color/colorGrey"
+        android:hint="Type here to search..."
+        android:textSize="@dimen/textMedium"
+        android:drawablePadding="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"/>
+
+</LinearLayout>

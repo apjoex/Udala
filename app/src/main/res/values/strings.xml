@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Udala</string>
+    <array name="cities">
+        <item>Lagos</item>
+        <item>Abuja</item>
+        <item>Onitsha</item>
+    </array>
+
+    <array name="type">
+        <item>Shop</item>
+        <item>Warehouse</item>
+    </array>
+
+    <array name="shops">
+        <item>Shop 1</item>
+        <item>Shop 2</item>
+        <item>Shop 3</item>
+        <item>Shop 4</item>
+        <item>Shop 5</item>
+    </array>
+
+    <array name="warehouses">
+        <item>Warehouse 1</item>
+        <item>Warehouse 2</item>
+        <item>Warehouse 3</item>
+        <item>Warehouse 4</item>
+        <item>Warehouse 5</item>
+    </array>
+
+    <array name="products">
+        <item>Dunlop</item>
+        <item>Product 2</item>
+    </array>
+
+
+    <array name="products_details">
+        <item>Dunlop 275 14</item>
+        <item>Dunlop 275 16</item>
+        <item>Dunlop 275 19</item>
+        <item>Dunlop 275 22</item>
+    </array>
+
+    <string name="base_url">http://udala.200ok.tech/api/v1/</string>
+
+    <string name="title_activity_worker">" "</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
